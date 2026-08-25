@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: sunnee-telegram-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python sunnee.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: YOUR_USERNAME
+        sync: false
+      - key: UPDATE_CHANNEL
+        sync: false
+      - key: FREE_USER_LIMIT
+        value: "2"
+      - key: SUBSCRIBED_USER_LIMIT
+        value: "20"
+      - key: ADMIN_LIMIT
+        value: "999"
