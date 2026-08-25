@@ -45,7 +45,7 @@ def keep_alive():
 # --- End Flask Keep Alive ---
 
 # --- Configuration FROM .env FILE ---
-TOKEN = os.getenv('BOT_TOKEN')
+TOKEN = os.getenv('8919283690:AAFkIoslNr2wUUvgcvx9lMT_hDBTHpaHsVc')
 if not TOKEN:
     raise RuntimeError('BOT_TOKEN environment variable is required.')
 OWNER_ID = int(os.getenv('OWNER_ID', 6964360406))
